@@ -1,0 +1,599 @@
+@charset "utf-8";
+
+/* 언어인코딩하는 것 */
+/* 여기 웹폰트 주소 붙이고 시작해야 함 */
+/* font-family: 'Georgia', sans-serif;
+font-family: 'Segoe UI', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Grandiflora One', serif;
+font-family: 'Viaoda Libre', cursive;
+font-family: 'GmarketSans';
+font-family: 'NanumSquareNeoLight';
+font-family: 'NanumSquareNeo';
+font-family: 'NanumSquareNeoBold';
+font-family: 'NanumSquareNeoExtraBold';
+font-family: 'NanumSquareNeoHeavy'; 
+*/
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+select {
+    padding: 0;
+    margin: 0;
+    cursor: url('../images/sub2/cur/foo523.cur'), pointer;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    cursor: url('../images/sub2/cur/foo523.cur'), pointer;
+}
+
+html {
+    font-size: 15px;
+    /* em/rem단위쓸거면 여기서 폰트사이즈 써야함 */
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    ;
+    list-style: none;
+    color: black;
+}
+.contents img:hover {
+    cursor: url(../images/main/sub.png) 54 54,auto; 
+}
+
+#wrap {
+    min-width: 1320px;
+}
+
+#header {
+    margin: 0 auto;
+    line-height: 22px;
+    color: rgb(20, 20, 20);
+    position: relative;
+    width: 1320px;
+}
+.logo {
+    text-align: center;
+    padding-top: 5px;
+}
+.utill {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.utill li {
+    float: left;
+    padding-left: 20px;
+    margin-right: 20px;
+}
+.utill li a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#gnb_wrap {
+    text-align: center;
+    height: 40px;
+    background-color: #C8E2FF;
+    margin-top: 10px;
+}
+
+#gnb {
+    display: inline-block;
+    padding: 10px 0px;
+}
+
+#gnb>li {
+    float: left;
+    vertical-align: middle;
+    position: relative;
+}
+
+#gnb>li>a {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0px 60px 10px;
+    /* 아랫쪽에 패딩을 줘야 손이 밑까지 내려갈 수가 있다 */
+    /* 아랫쪽 패딩이 중요!!! */
+    /* background-color: #85c4ff; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.submenu {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    display: none;
+    font-weight: bold;
+}
+
+#gnb li:hover .submenu {
+    display: block;
+}
+
+.submenu li a {
+    border-radius: 1px;
+    display: block;
+    padding: 10px 0;
+    color: #474747;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+    background-color: #FFFDDF;
+}
+
+.submenu li a:hover {
+    background-color: #C8E2FF;
+}
+
+#slide {
+    height: 729px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    /* 위아래틈붙이기 */
+    text-align: center;
+    /* 슬라이드 중복으로 붙일땐 이름 중복있는지 확인하고 바꾸기 */
+    position: relative;
+}
+
+#slide .swiper {
+    width: 1920px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#section1 {
+    height: 2200px;
+    background-color: #FFFDDF;
+    position: relative;
+}
+
+.inner_section1 {
+    text-align: center;
+}
+
+.cereal_wrap {
+    margin: 0 auto;
+    position: relative;
+    width: 1320px;
+
+}
+.cereal {
+    position: absolute;
+    top: -150px;
+    right: 0px;
+    z-index: 8;
+    /* 1320px 너비 넘어가면 스크롤 생김 */
+    /* 여기에 너비(부모너비)는 100프로 받으면 맨 끝으로 가기 때문에 가운데 가는 박스안에서 이동시켜야 하므로 박스 하나를 더 만들어줘야함 */
+    animation: motion 1s
+        /* 속도 */
+        linear 0s
+        /* 처음부터 끝까지 일정 속도로 진행 */
+        infinite alternate;
+    /* 무한 반복 */
+}
+/* 숟가락 */
+.rotate {
+    position: absolute; bottom:10px;left: -100px; z-index: 8; animation: gorhf 8s; animation-iteration-count: infinite; animation-direction: alternate; animation-delay: 1s
+}
+.rotateicon_wrap{
+    /* background-color: #535353; */
+    height: 400px;
+    overflow: hidden;
+    /* 핵심 */
+
+}
+.rotateicon{
+    margin: 0 auto;
+    width: 1320px;
+    position: relative;
+    height: 100%;
+}
+@keyframes gorhf { 
+    0%{}
+    100%{left: 1320px; transform: rotate(920deg)}
+}
+/* 시리얼 그릇 */
+.rotatecereal {
+    position: absolute; bottom:10px;left: 100px; z-index: 8; animation: rotatecereal 10s; animation-iteration-count: infinite; animation-direction: alternate; animation-delay: 1s
+}
+@keyframes rotatecereal { 
+    0%{}
+    100%{left: 1320px; transform: rotate(920deg)}
+}
+
+ @keyframes motion {
+    0% {
+        margin-top: 0px;
+    }
+    /* 처음 위치 */
+    100% {
+        margin-top: 60px;
+    }
+
+    /* 마지막 위치 */
+}
+.banner {
+    /* margin-top: 200px; */
+    background: url(../images/main/banner/top_banner.png) repeat center;
+    height: 660px;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.top_text1 {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.middle_text{
+    color:#886d5b;
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 50px;
+    padding-top: 50px;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: 600;
+}
+.middle_text:hover{
+    text-shadow: 0 0 .1em, 0 0 .3em;
+ }
+.bar_wrap {
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+span.bar {
+    display: inline-block;
+    width: 40px;
+    height: 4px;
+}
+
+.bar_w {
+    background-color: #886d5b;
+    border-radius: 10px;
+}
+
+#box1 {
+    text-align: center;
+    background-color: white;
+    height: 542px;
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    z-index: 9;
+    margin-left: -660px;
+    /* 여기서 마진 레프트에서 고정 */
+}
+
+.inner_box1 {
+    margin: 0 auto;
+    width: 1320px;
+}
+
+.sugarfree {
+    float: left;
+    padding-bottom: 40px;
+    overflow: hidden;
+    width: 50%;
+}
+
+.exp {
+    width: 50%;
+    float: right;
+    padding-top: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.exp_text {
+    font-size: 30px;
+}
+
+.box1_text1 {
+    padding: 40px 0px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'NanumSquareNeoLight';
+}
+
+.box1_text2 {
+    font-size: 14px;
+    padding-bottom: 50px;
+    font-family: 'NanumSquareNeo';
+}
+
+a.button {
+    background-color: #c4defc;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a.button:hover {
+    background-color: #f7ffc8;
+}
+
+.our_best {
+    margin: 0 auto;
+    width: 1320px;
+}
+
+.items li {
+    float: left;
+}
+
+#banner2 {
+    background: url(../images/main/banner/middle_banner.png) no-repeat center;
+    height: 787px;
+    text-align: center;
+    font-size: 17px;
+    color: #202020;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.banner2_wrap {
+    width: 578px;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 200px;
+}
+
+.inner_banner2 {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 50px;
+}
+
+.banner2_text1 {
+    padding-bottom: 25px;
+    font-family: 'NanumSquareNeo';
+}
+.banner2_text1 p{
+    font-family: 'NanumSquareNeo';
+}
+#section2 {
+    background-color: #FFFDDF;
+    height: 880px;
+}
+
+.inner_section2 {
+    margin: 0 auto;
+    width: 1320px;
+}
+
+.products {
+    margin: 0 auto;
+    width: 1310px;
+    height: 300px;
+    padding-top: 100px;
+}
+
+.products_wrap li {
+    float: left;
+    padding-left: 50px;
+    width: 16%;
+    text-align: center;
+    display: block;
+}
+
+.products_wrap img {
+    overflow: hidden;
+    transition: transform 0.4s;
+    display: block;
+}
+
+.products_wrap img:hover {
+    transform: translate(0px, -50px);
+    /* transform: rotateY(180deg);    */
+}
+
+.product_text {
+    background-color: #FFBA4A;
+    color: white;
+    margin-top: 60px;
+    padding: 10px;
+    border-radius: 50px;
+    display: inline-block;
+    width: 120px;
+    font-weight: 500;
+    font-family: 'NanumSquareNeo';
+}
+
+#video {
+    height: 670px;
+    background-color: #FFFDDF;
+    overflow: hidden;
+}
+
+.video_wrap {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#bottom_section {
+    height: 800px;
+    background-color: #FFFDDF;
+    position: relative;
+}
+
+.bottom_wrap {
+    margin: 0 auto;
+    width: 1320px;
+}
+
+#slide_wrap {
+    background: #FFFDDF;
+    padding: 50px 0;
+}
+
+#slide_wrap #slide {
+    width: 1320px;
+    height: 310px;
+    margin: 0 auto;
+}
+
+#slide_wrap #slide ul li a {
+    display: block;
+    margin: 5px;
+}
+
+.screen {
+    position: relative;
+    overflow: hidden;
+}
+
+.screen img {
+    width: 100%;
+    display: block;
+    border-radius: 30px;
+}
+
+.bottom {
+    padding: 5px 0px 0px;
+    position: absolute;
+    width: 100%;
+    bottom: -50%;
+    left: 0;
+    z-index: 2;
+    color: #0066ffa6;
+    font-weight: bold;
+    line-height: 20px;
+    transition: all 0.5s;
+    text-align: center;
+    font-size: 16px;
+    background-color: rgba(252, 255, 216, 0.5);
+}
+.bottom p{
+    padding-top: 5px;
+}
+
+.swiper-slide-active+.swiper-slide+.swiper-slide .bottom {
+    bottom: 0%;
+}
+
+/* .swiper-slide {
+    transform: scale(0.75);
+    transition: all 1s;
+}
+
+.swiper-slide-active+.swiper-slide+.swiper-slide {
+    transform: scale(1);
+}
+
+.swiper-slide-duplicate-prev {
+    transform: scale(0.75);
+} */
+
+/* 스케일 들어가서 확대된 배너가 나왔던 것 */
+/* 스케일을 지우기 */
+
+.swiper-button-prev {
+    left: 100px;
+}
+
+.swiper-button-next {
+    left: 200px;
+}
+
+.swiper-button-prev {
+    content: url(../images/left.png);
+    width: 50px;
+    height: 42px;
+}
+
+.swiper-button-next {
+    content: url(../images/right.png);
+    width: 50px;
+    height: 42px;
+}
+
+#footer {
+    height: 400px;
+    background-color: #DAAF6A;
+}
+
+.footer_wrap {
+    margin: 0 auto;
+    width: 1320px;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.footer_text li {
+    float: left;
+    padding: 60px 0px 0px 50px;
+}
+
+.footer_main {
+    padding-bottom: 15px;
+    font-weight: bold;
+    color: #202020;
+}
+
+.footer_bar {
+    margin: 10px 0px;
+    background-color: #3d3d3d;
+    display: inline-block;
+    width: 350px;
+    height: 1px;
+    border-radius: 50px;
+}
+
+.sns {
+    position: absolute;
+    top: 68px;
+    right: 200px;
+    z-index: 8;
+}
+
+.insta {
+    padding-bottom: 10px;
+}
+.btn{
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    z-index: 9;
+}
+.mySwiper1 .swiper-wrapper {
+    transition-timing-function: var(--swiper-wrapper-transition-timing-function, linear);
+}

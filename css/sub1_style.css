@@ -1,0 +1,331 @@
+@charset "utf-8";
+
+/* 언어인코딩하는 것 */
+/* 여기 웹폰트 주소 붙이고 시작해야 함 */
+/* font-family: 'Georgia', sans-serif;
+font-family: 'Segoe UI', sans-serif;
+font-family: 'Noto Sans KR', sans-serif; 
+font-family: 'Grandiflora One', serif;
+font-family: 'Viaoda Libre', cursive;
+font-family: 'GmarketSans';
+*/
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+select {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+}
+
+html {
+    font-size: 15px;
+    /* em/rem단위쓸거면 여기서 폰트사이즈 써야함 */
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    ;
+    list-style: none;
+    color: black;
+}
+
+#wrap {
+    min-width: 1320px;
+}
+#header {
+    margin: 0 auto;
+    line-height: 22px;
+    color: rgb(20, 20, 20);
+    position: relative;
+    width: 1320px;
+}
+
+.logo {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.utill {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.utill li {
+    float: left;
+    padding-left: 20px;
+    margin-right: 20px;
+}
+
+.utill li a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#gnb_wrap {
+    text-align: center;
+    height: 40px;
+    background-color: #C8E2FF;
+    margin-top: 10px;
+}
+
+#gnb {
+    display: inline-block;
+    padding: 10px 0px;
+}
+
+#gnb>li {
+    float: left;
+    vertical-align: middle;
+    position: relative;
+}
+
+#gnb>li>a {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0px 60px 10px;
+    /* 아랫쪽에 패딩을 줘야 손이 밑까지 내려갈 수가 있다 */
+    /* 아랫쪽 패딩이 중요!!! */
+    /* background-color: #85c4ff; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.submenu {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    display: none;
+    font-weight: bold;
+}
+
+#gnb li:hover .submenu {
+    display: block;
+}
+
+.submenu li a {
+    border-radius: 1px;
+    display: block;
+    padding: 10px 0;
+    color: #474747;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+    background-color: #FFFDDF;
+}
+
+.submenu li a:hover {
+    background-color: #C8E2FF;
+}
+
+#banner {
+    overflow: hidden;
+    /* 안하면 타자효과가 넘어가서 스크롤 생김 */
+    height: 729px;
+    background: url(../images/sub1/banner/banner.png) no-repeat center;
+}
+
+.banner_wrap {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.banner_text {
+    /* text-align: center; */
+    position: absolute;
+    top: 356px;
+    left: 28%;
+    z-index: 8;
+    word-spacing: 8px;
+    animation: typing 10s steps(29) forwards,
+            blink .8s step-end infinite;
+    letter-spacing: 6px;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #202020;
+    font-family: 'GmarketSans';
+    font-weight: 300;
+}
+
+@keyframes blink {
+    from, to{border-color: transparent;}
+    50%{border-color: #202020}
+}
+@keyframes typing {
+    0% {width: 0%;}
+    30% {width: 100%;}
+    80% {width: 100%;}
+    90% {width: 0%;}
+    100% {width: 0%;}
+}
+#section1{
+    height: 1100px;
+    background: url(../images/sub1/background/background1.png) no-repeat center;
+}
+.section1_wrap{
+    margin: 0 auto;
+    width: 1320px;
+    text-align: center;
+}
+.section1_text{
+    padding-top: 50px;
+    color: #202020;
+}
+.section1_text h2{
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 45px;
+    word-spacing: 8px;
+    padding-bottom: 45px;
+}
+.section1_text p{
+    font-weight: 500;
+}
+#section2{
+    background-color: #FFFDDF;
+
+}
+.section2_wrap{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    /* 레러티브하는 곳에 마진오토/너비 꼭 써주기 */
+    position: relative;    
+    height: 2540px;
+    background-color: #474747;
+}
+.pro1{
+    position: absolute;
+    top: 43%;
+    left: 67%;
+    z-index: 5;
+}
+.pro2{
+    position: absolute;
+    top: 56%;
+    left: -2%;
+    z-index: 5;
+}
+.pro3{
+    position: absolute;
+    top: 71%;
+    left: 67%;
+    z-index: 5;
+}
+.pro4{
+    position: absolute;
+    top: 86%;
+    left: 4%;
+    z-index: 5;
+}
+#bottom{
+    height: 2045px;
+    background: url(../images/sub1/background/background2.png)no-repeat center;
+}
+.bottom_wrap{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+.ingredients{
+    padding-top: 120px;
+}
+.pictures li{
+    float: left;
+    width: 33.3%;
+}
+.pictures li img{
+    display: block;
+}
+.pictures_top{
+    line-height: 0;
+}
+.bottom2{
+    background-color: #FFFDDF;
+    text-align: center;
+    margin: 0 auto;
+    height: 355px;
+}
+.btn{
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    z-index: 9;
+}
+
+#footer {
+    height: 400px;
+    background-color: #DAAF6A;
+}
+
+.footer_wrap {
+    margin: 0 auto;
+    width: 1320px;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.footer_text li {
+    float: left;
+    padding: 60px 0px 0px 50px;
+}
+
+.footer_main {
+    padding-bottom: 15px;
+    font-weight: bold;
+    color: #202020;
+}
+
+.footer_bar {
+    margin: 10px 0px;
+    background-color: #3d3d3d;
+    display: inline-block;
+    width: 350px;
+    height: 1px;
+    border-radius: 50px;
+}
+
+.sns {
+    position: absolute;
+    top: 68px;
+    right: 200px;
+    z-index: 8;
+}
+
+.insta {
+    padding-bottom: 10px;
+}

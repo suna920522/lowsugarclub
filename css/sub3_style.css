@@ -1,0 +1,443 @@
+@charset "utf-8";
+
+/* 언어인코딩하는 것 */
+/* 여기 웹폰트 주소 붙이고 시작해야 함 */
+/* font-family: 'Georgia', sans-serif;
+font-family: 'Segoe UI', sans-serif;
+font-family: 'Noto Sans KR', sans-serif; 
+font-family: 'Grandiflora One', serif;
+font-family: 'Viaoda Libre', cursive;
+font-family: 'GmarketSans';
+font-family: 'NanumSquareNeoLight';
+font-family: 'NanumSquareNeo';
+font-family: 'NanumSquareNeoBold';
+font-family: 'NanumSquareNeoExtraBold';
+font-family: 'NanumSquareNeoHeavy';
+*/
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+select {
+    padding: 0;
+    margin: 0;
+    cursor: url('../images/sub2/cur/foo523.cur'), pointer;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    cursor: url('../images/sub2/cur/foo523.cur'), pointer;
+}
+
+html {
+    font-size: 15px;
+    /* em/rem단위쓸거면 여기서 폰트사이즈 써야함 */
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    ;
+    list-style: none;
+    color: black;
+}
+
+#wrap {
+    min-width: 1320px;
+}
+#header {
+    margin: 0 auto;
+    line-height: 22px;
+    color: rgb(20, 20, 20);
+    position: relative;
+    width: 1320px;
+}
+
+.logo {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.utill {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.utill li {
+    float: left;
+    padding-left: 20px;
+    margin-right: 20px;
+}
+
+.utill li a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#gnb_wrap {
+    text-align: center;
+    height: 40px;
+    background-color: #C8E2FF;
+    margin-top: 10px;
+}
+
+#gnb {
+    display: inline-block;
+    padding: 10px 0px;
+}
+
+#gnb>li {
+    float: left;
+    vertical-align: middle;
+    position: relative;
+}
+
+#gnb>li>a {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0px 60px 10px;
+    /* 아랫쪽에 패딩을 줘야 손이 밑까지 내려갈 수가 있다 */
+    /* 아랫쪽 패딩이 중요!!! */
+    /* background-color: #85c4ff; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.submenu {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    display: none;
+    font-weight: bold;
+}
+
+#gnb li:hover .submenu {
+    display: block;
+}
+
+.submenu li a {
+    border-radius: 1px;
+    display: block;
+    padding: 10px 0;
+    color: #474747;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+    background-color: #FFFDDF;
+}
+
+.submenu li a:hover {
+    background-color: #C8E2FF;
+}
+#banner{
+    height: 731px;
+    background: url(../images/sub3/banner.png) no-repeat center;
+}
+.banner_wrap{
+    margin: 0 auto;
+    width: 1320px;
+}
+#section1{
+    background-color: #FFFDDF;
+    height: 3400px;
+    text-align: center;
+}
+.charity_wrap{
+    text-align: center;
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+}
+.charity_img1{
+    position: absolute;
+    top: 655px;
+    right: 360px;
+    z-index: 5;
+    animation: up-down 1.4s infinite ease-in-out alternate;
+}
+.charity_img2{
+    position: absolute;
+    top: 850px;
+    right: 0px;
+    z-index: 5;
+    animation: up-down 1.4s infinite ease-in-out alternate;
+}
+.charity_img3{
+    position: absolute;
+    top: 1200px;
+    left: 50px;
+    z-index: 5;
+    animation: up-down 1.4s infinite ease-in-out alternate;
+}
+.charity_img4{
+    position: absolute;
+    bottom: 650px;
+    right: 0px;
+    z-index: 5;
+    animation: up-down 1.4s infinite ease-in-out alternate;
+}
+.charity_img5{
+    position: absolute;
+    bottom: 400px;
+    left: 270px;
+    z-index: 5;
+    animation: up-down 1.4s infinite ease-in-out alternate;
+}
+@keyframes up-down{
+    from{
+      transform: translatey(0px);
+    }
+    to{
+      transform: translatey(-20px);
+    }
+  }
+#section1 H2{
+     padding-top: 60px;
+} 
+#section1 H2 a{
+    color:#886d5b;
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 50px;
+    font-weight: 600;
+    padding-top: 50px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+#section1 H2 a:hover{
+    text-shadow: 0 0 .1em, 0 0 .3em;
+ }
+ #section2{
+    height: 1178px;
+    background-color: #FFFDDF;
+    
+ }
+ .inner_section2{
+    margin: 0 auto;
+    width: 1246px;
+ }
+ .middle_photo{
+    float: left;
+    width: 855px;
+ }
+ .middle_text{
+    float: right;
+    background-color: #ffffff;
+    width: 391px;
+    height: 303px;
+ }
+ .main{
+     padding: 30px 0px 0px 20px;
+ }
+ .number{
+    padding: 30px 0px 0px 20px;
+    font-family: 'GmarketSans';
+    font-size: 50px;
+    color: orange;
+ }
+ .last{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'NanumSquareNeo';
+    padding-top: 15px;
+ }
+ #section3{
+    height: 1900px;
+    background-color: #FFFDDF;
+ }
+ .inner_section3{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+ }
+ .ballon{
+    position: absolute;
+    top: -106px;
+    left: 372px;
+ }
+ .contents1{
+    position: relative;
+ }
+ .leaf1{
+    position: absolute; 
+    top: 0px; 
+    left: 300px; 
+    z-index: 1; 
+    animation: leaf1 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+ }
+ @keyframes leaf1 { 
+        0% { -webkit-transform: rotateZ(0); }
+        1% { -webkit-transform: rotateZ(10deg); }
+        10% { -webkit-transform: rotateZ(-8deg); }
+        19% { -webkit-transform: rotateZ(8deg); }
+        28% { -webkit-transform: rotateZ(-6deg); }
+        37% { -webkit-transform: rotateZ(6deg); }
+        46% { -webkit-transform: rotateZ(-4deg); }
+        55% { -webkit-transform: rotateZ(4deg); }
+        64% { -webkit-transform: rotateZ(-2deg); }
+        73% { -webkit-transform: rotateZ(1deg); }
+        82% { -webkit-transform: rotateZ(-1deg); }
+        100% { -webkit-transform: rotateZ(0); }
+}
+ .leaf2{
+    position: absolute;
+    top: -80px;
+    left: 560px;
+    animation: leaf2 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+ }
+ @keyframes leaf2 { 
+    0% { -webkit-transform: rotateZ(0); }
+    1% { -webkit-transform: rotateZ(10deg); }
+    10% { -webkit-transform: rotateZ(-8deg); }
+    15% { -webkit-transform: rotateZ(8deg); }
+    20% { -webkit-transform: rotateZ(-6deg); }
+    30% { -webkit-transform: rotateZ(6deg); }
+    40% { -webkit-transform: rotateZ(-4deg); }
+    50% { -webkit-transform: rotateZ(4deg); }
+    60% { -webkit-transform: rotateZ(-2deg); }
+    70% { -webkit-transform: rotateZ(1deg); }
+    80% { -webkit-transform: rotateZ(-1deg); }
+    100% { -webkit-transform: rotateZ(0); }
+}
+ .leaf3{
+    position: absolute;
+    top: -10px;
+    right: 460px;
+ }
+ .campaign{
+    color:#886d5b;
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 50px;
+    font-weight: 600px;
+    padding-top: 50px;
+    text-decoration: none;
+    transition: 0.5s;
+ }
+.campaign:hover{
+    text-shadow: 0 0 .1em, 0 0 .3em;
+ }
+ .campaign_img{
+    transition: transform 300ms;
+ }
+ .campaign_img:hover{
+   transform:rotate(180deg); transition-duration: 300ms;
+ }
+ .contents2{
+    height: 430px;
+ }
+ .contents2_wrap{
+    width: 1320px;
+ }
+ .imgntext{
+    height: 430px;
+    padding-top: 50px;
+    display: inline-block;
+    /* 디스플레이 인라인블럭 해야함!! 그래야 가운데 명령 가능함*/
+    perspective: 1300px;
+ }
+ .imgntext li{
+    float: left;
+    padding: 0px 50px 0;
+    transition: transform 1s;
+ }
+ .imgntext li:hover{
+    transform: rotateY(360deg);
+    transition: transform 3s;
+
+}
+ /* .plus{
+    padding: 100px 0px 0px 60px;
+ } */
+ .text1{
+    font-size: 20px;
+    font-family: 'NanumSquareNeo';
+ }
+ .text2{
+    font-size: 14px;
+    font-family: 'NanumSquareNeo';
+    padding-top: 20px;
+ }
+ .contents3{
+    margin-top: 250px;
+ }
+ .contents3_text{
+    padding: 50px 0px 10px;
+ }
+ #footer {
+    height: 400px;
+    background-color: #DAAF6A;
+}
+
+.footer_wrap {
+    margin: 0 auto;
+    width: 1320px;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.footer_text li {
+    float: left;
+    padding: 60px 0px 0px 50px;
+}
+
+.footer_main {
+    padding-bottom: 15px;
+    font-weight: bold;
+    color: #202020;
+}
+
+.footer_bar {
+    margin: 10px 0px;
+    background-color: #3d3d3d;
+    display: inline-block;
+    width: 350px;
+    height: 1px;
+    border-radius: 50px;
+}
+
+.sns {
+    position: absolute;
+    top: 68px;
+    right: 200px;
+    z-index: 8;
+}
+
+.insta {
+    padding-bottom: 10px;
+}
+.btn{
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    z-index: 9;
+}
